@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <DHT.h>
 
-const char* ssid = "Familia Batz";         // Cambia por tu SSID
-const char* password = "Familiabatz123";   // Cambia por tu contraseña
+const char* ssid = "Familia Batz";         // Nombre Wifi
+const char* password = "Familiabatz123";   // Contraseña Wifi
 
 const int ledPin1 = 2;   // Primer LED
 const int ledPin2 = 4;   // Segundo LED
@@ -130,7 +130,7 @@ void loop() {
 
   String response = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n";
   response += "<html><head>";
-  response += "<meta charset=\"UTF-8\">";  // Especifica la codificación de caracteres UTF-8
+  response += "<meta charset=\"UTF-8\">";  
   response += "<style>";
   response += "body { font-family: Arial, sans-serif; text-align: center; }";
   response += "h1 { color: #333; }";
